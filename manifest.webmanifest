@@ -1,0 +1,24 @@
+{
+  "name": "SPUDVERSE 3D",
+  "short_name": "Spudverse",
+  "description": "Build your own 3D potato character in the browser \u2014 drag eyes, noses, mouths, hats and accessories onto a freeform potato.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0c1220",
+  "theme_color": "#0c1220",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
