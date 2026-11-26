@@ -10,19 +10,26 @@
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <style>
 :root{--bg:#0c1120;--panel:#1b2535;--panel2:#202e40;--border:#3b4b62;--text:#f7f9fe;--muted:#aabbd0;--lime:#d8ff7a;--pink:#ff9bb9;--blue:#96c9ff;--gold:#ffd079}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:ui-rounded,'Avenir Next',Avenir,'Segoe UI',system-ui,sans-serif;color:var(--text);background:radial-gradient(ellipse at 50% -30%,#38425f 0%,transparent 55%),radial-gradient(ellipse at 5% 90%,#1a3152 0%,transparent 48%),var(--bg)}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--lime);outline-offset:3px}button:disabled{opacity:.4;cursor:not-allowed}.app{max-width:1650px;margin:auto;padding:13px 16px 16px}.header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:11px}.brand{display:flex;align-items:center;gap:10px}.brand-mark{display:grid;place-items:center;width:46px;height:46px;background:linear-gradient(140deg,#e2ff95,#b8e75a);border-radius:16px;box-shadow:inset 0 -5px #8bb745,0 8px 24px #0004;font-size:28px;transform:rotate(-7deg)}.brand small{display:block;font-size:10px;letter-spacing:2.4px;font-weight:900;color:var(--lime)}.brand h1{font-size:clamp(19px,2.4vw,27px);letter-spacing:-1.4px;line-height:1.1;margin:2px 0 0;font-weight:1000}.brand h1 b{color:var(--lime)}.head-actions{display:flex;align-items:center;gap:8px}.pill-tag{border:1px solid #54667d;color:#c2d2e5;border-radius:99px;padding:9px 13px;font-size:10px;font-weight:900;letter-spacing:1px}.btn{border:1px solid #52647b;background:#29384d;color:var(--text);border-radius:12px;padding:10px 13px;font-weight:850;font-size:12px;transition:transform .12s,background .12s}.btn:hover,.choice:hover,.cat:hover,.preset:hover{transform:translateY(-1px)}.btn.main{background:var(--lime);color:#223018;border-color:var(--lime);box-shadow:0 6px 20px #b9ec4a24}.btn.icon{padding:9px 11px}.intro{display:flex;justify-content:space-between;align-items:center;gap:10px;background:linear-gradient(100deg,#bce97018,#81a5ff13);border:1px solid #5a73585c;border-radius:15px;margin-bottom:10px;padding:9px 13px;overflow:hidden;transition:.2s}.intro strong{color:#e8ffb4;font-size:12px}.intro span{color:#c3d0de;font-size:11px}.intro.collapsed{padding:5px 11px}.intro.collapsed .intro-copy{display:none}.intro button{background:transparent;color:var(--lime);border:0;font-size:11px;font-weight:850;white-space:nowrap}.studio{display:grid;grid-template-columns:245px minmax(360px,1fr) 270px;gap:12px;height:min(795px,calc(100dvh - 148px));min-height:570px}.panel{background:linear-gradient(157deg,#202c3d,#172233);border:1px solid #3b4a5f;border-radius:22px;box-shadow:0 16px 40px #0004;overflow:hidden}.left,.right{padding:16px 13px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#5b6b82 transparent}.panel-heading{display:flex;justify-content:space-between;align-items:center;margin:1px 3px 7px}.panel-heading h2{font-size:17px;letter-spacing:-.45px;margin:0}.micro{font-size:9px;letter-spacing:1.4px;color:var(--lime);font-weight:950}.subtext{font-size:11px;line-height:1.55;color:var(--muted);margin:4px 3px 13px}.categories{display:grid;grid-template-columns:1fr 1fr;gap:6px}.cat{display:flex;gap:7px;align-items:center;text-align:left;border:1px solid #3e5066;background:#27364b;color:#d7e3f2;border-radius:11px;padding:10px 7px;font-size:11px;font-weight:850;min-height:43px}.cat .ico{font-size:18px}.cat.active{border-color:var(--lime);background:#d8ff7a1e;color:var(--lime)}.tray-heading{display:flex;justify-content:space-between;align-items:center;margin:17px 3px 9px}.tray-heading strong{font-size:11px;letter-spacing:.8px}.tray-heading small{font-size:9px;color:#a9b9cc}.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.choice{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;min-height:76px;background:linear-gradient(140deg,#304258,#25354b);border:1px solid #4b6078;color:#e5edf8;border-radius:13px;padding:9px 3px;font-size:10px;font-weight:850}.choice .emoji{font-size:27px;filter:drop-shadow(0 2px 2px #0004)}.choice small{color:#a6bcd0;font-size:9px}.choice:active{background:#546d7d}.hint{font-size:11px;line-height:1.55;background:#101c2d;border:1px solid #334b64;border-radius:12px;padding:11px;margin-top:13px;color:#bbcee1}.stage{position:relative;isolation:isolate;border:1px solid #566981;border-radius:23px;overflow:hidden;min-width:0;background:radial-gradient(ellipse at 52% 35%,#617d95 0%,#3a5069 36%,#1b2b43 72%,#142039 100%);box-shadow:0 16px 50px #0006}.stage[data-scene='candy']{background:radial-gradient(ellipse at 50% 33%,#dca8cc,#8d729e 44%,#443e72 100%)}.stage[data-scene='sunset']{background:radial-gradient(ellipse at 50% 32%,#ffca91,#bb747d 43%,#543b64 100%)}.stage[data-scene='midnight']{background:radial-gradient(ellipse at 50% 32%,#32466d,#192d50 45%,#081222 100%)}.stage:before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 100%,#d3f2ff1c 0%,transparent 53%)}.stage:after{content:'';position:absolute;bottom:9%;left:15%;right:15%;height:8%;border-radius:50%;background:#0a142b66;filter:blur(28px);pointer-events:none}.stage canvas{position:relative;z-index:1;width:100%;height:100%;display:block;touch-action:none;cursor:grab}.stage canvas.dragging{cursor:grabbing}.stage-top{position:absolute;z-index:3;left:14px;right:14px;top:15px;display:flex;justify-content:space-between;gap:8px;align-items:flex-start;pointer-events:none}.live,.stage-help{font-size:10px;font-weight:850;letter-spacing:.8px;background:#10233abf;border:1px solid #7c9bb777;border-radius:99px;padding:9px 12px;backdrop-filter:blur(7px)}.live{color:#e8ffd3}.live i{display:inline-block;width:7px;height:7px;background:#b8ff75;box-shadow:0 0 9px #b8ff75;border-radius:50%;margin-right:6px}.stage-help{color:#e0eaf6;letter-spacing:0}.stage-bottom{position:absolute;z-index:3;bottom:14px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:end;gap:8px;pointer-events:none}.stage-bottom>*{pointer-events:auto}.stage-name{font-size:clamp(17px,2vw,23px);font-weight:1000;letter-spacing:-.5px;text-shadow:0 2px 10px #0008}.stage-caption{font-size:10px;color:#e1e9f5;margin-top:4px;text-shadow:0 2px 10px #000}.stage-tools{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.tool{width:36px;height:36px;border:1px solid #8198b08a;border-radius:11px;background:#16283fcb;color:#f0f8ff;font-size:18px;font-weight:800;backdrop-filter:blur(8px)}.tool.active{background:var(--lime);border-color:var(--lime);color:#263819}.right .field{display:block;font-size:10px;font-weight:900;letter-spacing:1.2px;color:#adbed2;margin:16px 2px 8px}.right .field:first-of-type{margin-top:11px}.name{width:100%;background:#101c2e;color:white;border:1px solid #50647d;border-radius:11px;padding:11px;font-size:13px;font-weight:850}.presets{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}.preset{border:1px solid #4a5c71;background:#2b3b50;border-radius:11px;color:#dbe6f4;padding:8px 3px;font-size:10px;font-weight:850}.preset .emoji{display:block;font-size:22px;margin-bottom:3px}.swatches{display:flex;flex-wrap:wrap;gap:8px}.swatch{width:31px;height:31px;border-radius:50%;border:3px solid #243349;box-shadow:0 0 0 1px #72869b66}.swatch.active{box-shadow:0 0 0 2px var(--lime),0 0 0 5px #253348}.scene-row{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}.scene-btn{border:1px solid #4a5e74;background:#2d3c50;color:#dbe6f3;border-radius:9px;padding:7px 2px;font-size:9px;font-weight:850}.scene-btn.active{border-color:var(--lime);color:var(--lime)}.inspector{margin-top:13px;padding:11px;border:1px solid #516782;background:#101d2c;border-radius:14px}.inspector-head{display:flex;justify-content:space-between;align-items:center;gap:6px}.inspector-head strong{font-size:12px}.inspector-head small{color:var(--lime);font-size:10px}.range-row{display:flex;justify-content:space-between;font-size:11px;font-weight:800;margin:12px 0 5px}.range-row output{color:var(--lime)}input[type=range]{width:100%;accent-color:var(--lime);height:16px}.mini-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:10px}.mini{border:1px solid #5a6b80;border-radius:9px;background:#2d3e52;color:#e6f0fa;padding:9px 2px;font-size:10px;font-weight:850}.mini.danger{border-color:#98647c;color:#ffc1d1}.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}.action-grid .btn{padding:10px 5px;font-size:11px}.action-grid .wide{grid-column:1/-1}.divider{height:1px;background:#42536b;margin:15px 0 8px}.footer{display:flex;justify-content:space-between;gap:10px;font-size:10px;color:#91a4bc;margin:10px 4px 0}.toast{position:absolute;z-index:6;left:50%;top:66px;transform:translate(-50%,-12px);opacity:0;pointer-events:none;white-space:nowrap;max-width:95%;overflow:hidden;text-overflow:ellipsis;background:var(--lime);color:#203119;padding:10px 14px;border-radius:12px;font-size:12px;font-weight:900;box-shadow:0 10px 30px #0005;transition:.22s}.toast.show{transform:translate(-50%,0);opacity:1}.confetti{position:absolute;z-index:5;width:8px;height:13px;border-radius:2px;pointer-events:none;animation:fall 1.65s ease-out forwards}@keyframes fall{0%{transform:translateY(-12px) rotate(0);opacity:1}100%{transform:translateY(480px) rotate(600deg);opacity:0}}.load-input{display:none}.splash{position:absolute;z-index:2;inset:0;display:grid;place-items:center;background:radial-gradient(circle,#405778,#172339);font-size:13px;font-weight:900;letter-spacing:1px;pointer-events:none}.splash.hidden{display:none}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:ui-rounded,'Avenir Next',Avenir,'Segoe UI',system-ui,sans-serif;color:var(--text);background:radial-gradient(ellipse at 50% -30%,#38425f 0%,transparent 55%),radial-gradient(ellipse at 5% 90%,#1a3152 0%,transparent 48%),var(--bg)}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--lime);outline-offset:3px}button:disabled{opacity:.4;cursor:not-allowed}.app{max-width:1650px;margin:auto;padding:13px 16px 16px}.header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:11px}.brand{display:flex;align-items:center;gap:10px}.brand-mark{display:grid;place-items:center;width:46px;height:46px;background:linear-gradient(140deg,#e2ff95,#b8e75a);border-radius:16px;box-shadow:inset 0 -5px #8bb745,0 8px 24px #0004;font-size:28px;transform:rotate(-7deg)}.brand small{display:block;font-size:10px;letter-spacing:2.4px;font-weight:900;color:var(--lime)}.brand h1{font-size:clamp(19px,2.4vw,27px);letter-spacing:-1.4px;line-height:1.1;margin:2px 0 0;font-weight:1000}.brand h1 b{color:var(--lime)}.head-actions{display:flex;align-items:center;gap:8px}.pill-tag{border:1px solid #54667d;color:#c2d2e5;border-radius:99px;padding:9px 13px;font-size:10px;font-weight:900;letter-spacing:1px}.btn{border:1px solid #52647b;background:#29384d;color:var(--text);border-radius:12px;padding:10px 13px;font-weight:850;font-size:12px;transition:transform .12s,background .12s}.btn:hover,.choice:hover,.cat:hover,.preset:hover{transform:translateY(-1px)}.btn.main{background:var(--lime);color:#223018;border-color:var(--lime);box-shadow:0 6px 20px #b9ec4a24}.btn.icon{padding:9px 11px}.intro{display:flex;justify-content:space-between;align-items:center;gap:10px;background:linear-gradient(100deg,#bce97018,#81a5ff13);border:1px solid #5a73585c;border-radius:15px;margin-bottom:10px;padding:9px 13px;overflow:hidden;transition:.2s}.intro strong{color:#e8ffb4;font-size:12px}.intro span{color:#c3d0de;font-size:11px}.intro.collapsed{padding:5px 11px}.intro.collapsed .intro-copy{display:none}.intro button{background:transparent;color:var(--lime);border:0;font-size:11px;font-weight:850;white-space:nowrap}.studio{display:grid;grid-template-columns:245px minmax(360px,1fr) 270px;gap:12px;height:min(795px,calc(100dvh - 148px));min-height:570px}.panel{background:linear-gradient(157deg,#202c3d,#172233);border:1px solid #3b4a5f;border-radius:22px;box-shadow:0 16px 40px #0004;overflow:hidden}.left,.right{padding:16px 13px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#5b6b82 transparent}.panel-heading{display:flex;justify-content:space-between;align-items:center;margin:1px 3px 7px}.panel-heading h2{font-size:17px;letter-spacing:-.45px;margin:0}.micro{font-size:9px;letter-spacing:1.4px;color:var(--lime);font-weight:950}.subtext{font-size:11px;line-height:1.55;color:var(--muted);margin:4px 3px 13px}.categories{display:grid;grid-template-columns:1fr 1fr;gap:6px}.cat{display:flex;gap:7px;align-items:center;text-align:left;border:1px solid #3e5066;background:#27364b;color:#d7e3f2;border-radius:11px;padding:10px 7px;font-size:11px;font-weight:850;min-height:43px}.cat .ico{font-size:18px}.cat.active{border-color:var(--lime);background:#d8ff7a1e;color:var(--lime)}.tray-heading{display:flex;justify-content:space-between;align-items:center;margin:17px 3px 9px}.tray-heading strong{font-size:11px;letter-spacing:.8px}.tray-heading small{font-size:9px;color:#a9b9cc}.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.choice{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;min-height:76px;background:linear-gradient(140deg,#304258,#25354b);border:1px solid #4b6078;color:#e5edf8;border-radius:13px;padding:9px 3px;font-size:10px;font-weight:850}.choice .emoji{font-size:27px;filter:drop-shadow(0 2px 2px #0004)}.choice small{color:#a6bcd0;font-size:9px}.choice:active{background:#546d7d}.hint{font-size:11px;line-height:1.55;background:#101c2d;border:1px solid #334b64;border-radius:12px;padding:11px;margin-top:13px;color:#bbcee1}.stage{position:relative;isolation:isolate;border:1px solid #566981;border-radius:23px;overflow:hidden;min-width:0;background:radial-gradient(ellipse at 52% 35%,#617d95 0%,#3a5069 36%,#1b2b43 72%,#142039 100%);box-shadow:0 16px 50px #0006}.stage[data-scene='candy']{background:radial-gradient(ellipse at 50% 33%,#dca8cc,#8d729e 44%,#443e72 100%)}.stage[data-scene='sunset']{background:radial-gradient(ellipse at 50% 32%,#ffca91,#bb747d 43%,#543b64 100%)}.stage[data-scene='midnight']{background:radial-gradient(ellipse at 50% 32%,#32466d,#192d50 45%,#081222 100%)}.stage:before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 100%,#d3f2ff1c 0%,transparent 53%)}.stage:after{content:'';position:absolute;bottom:9%;left:15%;right:15%;height:8%;border-radius:50%;background:#0a142b66;filter:blur(28px);pointer-events:none}.stage canvas{position:relative;z-index:1;width:100%;height:100%;display:block;touch-action:none;cursor:grab}.stage canvas.dragging{cursor:grabbing}.stage-top{position:absolute;z-index:3;left:14px;right:14px;top:15px;display:flex;justify-content:space-between;gap:8px;align-items:flex-start;pointer-events:none}.live,.stage-help{font-size:10px;font-weight:850;letter-spacing:.8px;background:#10233abf;border:1px solid #7c9bb777;border-radius:99px;padding:9px 12px;backdrop-filter:blur(7px)}.live{color:#e8ffd3}.live i{display:inline-block;width:7px;height:7px;background:#b8ff75;box-shadow:0 0 9px #b8ff75;border-radius:50%;margin-right:6px}.stage-help{color:#e0eaf6;letter-spacing:0}.stage-bottom{position:absolute;z-index:3;bottom:14px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:end;gap:8px;pointer-events:none}.stage-bottom>*{pointer-events:auto}.stage-name{font-size:clamp(17px,2vw,23px);font-weight:1000;letter-spacing:-.5px;text-shadow:0 2px 10px #0008}.stage-caption{font-size:10px;color:#e1e9f5;margin-top:4px;text-shadow:0 2px 10px #000}.stage-tools{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.tool{width:36px;height:36px;border:1px solid #8198b08a;border-radius:11px;background:#16283fcb;color:#f0f8ff;font-size:18px;font-weight:800;backdrop-filter:blur(8px)}.tool.active{background:var(--lime);border-color:var(--lime);color:#263819}.right .field{display:block;font-size:10px;font-weight:900;letter-spacing:1.2px;color:#adbed2;margin:16px 2px 8px}.right .field:first-of-type{margin-top:11px}.name{width:100%;background:#101c2e;color:white;border:1px solid #50647d;border-radius:11px;padding:11px;font-size:13px;font-weight:850}.presets{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}.preset{border:1px solid #4a5c71;background:#2b3b50;border-radius:11px;color:#dbe6f4;padding:8px 3px;font-size:10px;font-weight:850}.preset .emoji{display:block;font-size:22px;margin-bottom:3px}.swatches{display:flex;flex-wrap:wrap;gap:8px}.swatch{width:31px;height:31px;border-radius:50%;border:3px solid #243349;box-shadow:0 0 0 1px #72869b66}.swatch.active{box-shadow:0 0 0 2px var(--lime),0 0 0 5px #253348}.scene-row{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}.scene-btn{border:1px solid #4a5e74;background:#2d3c50;color:#dbe6f3;border-radius:9px;padding:7px 2px;font-size:9px;font-weight:850}.scene-btn.active{border-color:var(--lime);color:var(--lime)}.inspector{margin-top:13px;padding:11px;border:1px solid #516782;background:#101d2c;border-radius:14px}.inspector-head{display:flex;justify-content:space-between;align-items:center;gap:6px}.inspector-head strong{font-size:12px}.inspector-head small{color:var(--lime);font-size:10px}.range-row{display:flex;justify-content:space-between;font-size:11px;font-weight:800;margin:12px 0 5px}.range-row output{color:var(--lime)}input[type=range]{width:100%;accent-color:var(--lime);height:16px}.mini-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:10px}.mini{border:1px solid #5a6b80;border-radius:9px;background:#2d3e52;color:#e6f0fa;padding:9px 2px;font-size:10px;font-weight:850}.mini.danger{border-color:#98647c;color:#ffc1d1}.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}.action-grid .btn{padding:10px 5px;font-size:11px}.action-grid .wide{grid-column:1/-1}.divider{height:1px;background:#42536b;margin:15px 0 8px}.footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:10px;color:#91a4bc;margin:10px 4px 0}
+/* PWA-UPDATE-SYSTEM v2 */
+[hidden]{display:none!important}.update-bar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;background:var(--panel);border:1.5px solid var(--lime);border-radius:14px;padding:11px 14px;font-size:12px;margin:0 0 10px;color:var(--text)}.update-bar .btn{padding:8px 12px}#updateStatus{color:var(--muted)}.toast{position:absolute;z-index:6;left:50%;top:66px;transform:translate(-50%,-12px);opacity:0;pointer-events:none;white-space:nowrap;max-width:95%;overflow:hidden;text-overflow:ellipsis;background:var(--lime);color:#203119;padding:10px 14px;border-radius:12px;font-size:12px;font-weight:900;box-shadow:0 10px 30px #0005;transition:.22s}.toast.show{transform:translate(-50%,0);opacity:1}.confetti{position:absolute;z-index:5;width:8px;height:13px;border-radius:2px;pointer-events:none;animation:fall 1.65s ease-out forwards}@keyframes fall{0%{transform:translateY(-12px) rotate(0);opacity:1}100%{transform:translateY(480px) rotate(600deg);opacity:0}}.load-input{display:none}.splash{position:absolute;z-index:2;inset:0;display:grid;place-items:center;background:radial-gradient(circle,#405778,#172339);font-size:13px;font-weight:900;letter-spacing:1px;pointer-events:none}.splash.hidden{display:none}
 @media(max-width:1160px){.studio{grid-template-columns:215px minmax(340px,1fr) 235px}.left,.right{padding:12px 9px}.cat{font-size:10px;padding:9px 5px}.stage-help{display:none}.app{padding:9px}.studio{height:calc(100dvh - 133px)}}
 @media(max-width:840px){.studio{grid-template-columns:1fr 1fr;height:auto;min-height:0}.stage{grid-column:1/-1;grid-row:1;height:min(62dvh,650px);min-height:410px}.left,.right{overflow:visible}.categories{grid-template-columns:repeat(3,1fr)}.choices{grid-template-columns:repeat(3,1fr)}.pill-tag{display:none}}
 @media(max-width:550px){.app{padding:7px}.brand-mark{width:37px;height:37px;font-size:24px;border-radius:11px}.brand h1{font-size:19px}.brand small{font-size:8px;letter-spacing:1.3px}.header{margin:3px 2px 8px}.head-actions .btn{padding:9px;font-size:11px}.head-actions .undohead{display:none}.intro{padding:8px 9px}.intro-copy{max-width:250px}.intro span{display:none}.studio{grid-template-columns:1fr;gap:8px}.stage{grid-column:1;grid-row:1;height:57dvh;min-height:365px;max-height:610px;border-radius:17px}.left,.right{padding:13px}.categories{grid-template-columns:repeat(4,1fr)}.cat{display:flex;flex-direction:column;justify-content:center;text-align:center;gap:1px;padding:6px 2px;min-height:51px;font-size:9px}.cat .ico{font-size:19px}.choices{grid-template-columns:repeat(4,1fr)}.choice{min-height:68px;font-size:9px}.choice .emoji{font-size:23px}.stage-top{top:9px;left:9px}.stage-bottom{bottom:9px;left:9px;right:9px}.stage-name{font-size:17px}.stage-caption{font-size:9px}.tool{width:30px;height:30px;font-size:16px}.stage-tools{gap:4px}.footer{font-size:8px}.right .field{margin-top:13px}}
 </style></head>
 <body><div class="app">
 <header class="header"><div class="brand"><div class="brand-mark">🥔</div><div><small>THE ULTIMATE POTATO PLAYGROUND</small><h1>SPUDVERSE <b>3D</b></h1></div></div><div class="head-actions"><span class="pill-tag">✦ FREEFORM EDITION</span><button class="btn undohead" id="undoTop" title="Undo">↶ Undo</button><button class="btn main" id="surpriseTop">✦ Surprise me!</button></div></header>
+<!-- PWA-UPDATE-SYSTEM v2 -->
+<div class="update-bar" id="updateBar" role="status" aria-live="polite" hidden>
+  <span id="updateText">A new version of Spudverse 3D is ready. Your potato and saved work are kept.</span>
+  <span><button class="btn main" id="updateNow">Update now</button> <button class="btn" id="updateLater">Later</button></span>
+</div>
 <div class="intro" id="intro"><div class="intro-copy"><strong>Put it anywhere. Make it ridiculous. ✨</strong> <span> Every piece is independent, so mismatched eyes and upside-down mustaches are encouraged.</span></div><button id="introToggle" aria-expanded="true">Hide tips ▴</button></div>
 <main class="studio">
 <aside class="panel left"><div class="panel-heading"><h2>🧸 The Toy Box</h2><span class="micro">∞ FREEFORM</span></div><p class="subtext">Tap a part to add it. Tap again for another. Drag each piece to any spot on the 3D potato.</p><div class="categories" id="categories"></div><div class="tray-heading"><strong id="trayLabel">EYES</strong><small>+ TAP TO ADD</small></div><div class="choices" id="choices"></div><div class="hint"><b>🖐️ Freeform controls</b><br>Drag a piece to move it anywhere. Drag empty space to turn the potato. Pinch or scroll to zoom. Select a part to resize, rotate, flip, duplicate or delete it.</div></aside>
 <section class="stage" id="stage" data-scene="studio"><canvas id="glcanvas" aria-label="Interactive freeform 3D potato character builder"></canvas><div class="splash" id="splash">✦ PREPARING THE POTATO UNIVERSE...</div><div class="stage-top"><div class="live"><i></i> LIVE 3D · FREEFORM</div><div class="stage-help">DRAG TO MOVE PIECES · DRAG BACKGROUND TO ORBIT</div></div><div class="toast" id="toast"></div><div class="stage-bottom"><div><div class="stage-name" id="stageName">Sir Spuds-a-Lot</div><div class="stage-caption" id="stageCaption">Anything goes in the Spudverse 🥔</div></div><div class="stage-tools"><button class="tool" id="zoomIn" title="Zoom in" aria-label="Zoom in">+</button><button class="tool" id="zoomOut" title="Zoom out" aria-label="Zoom out">−</button><button class="tool" id="front" title="Front view" aria-label="Front view">⌖</button><button class="tool active" id="spin" title="Auto spin" aria-label="Toggle auto spin">⟳</button><button class="tool" id="music" title="Play or pause music" aria-label="Play or pause music">♫</button><button class="tool" id="picture" title="Save PNG picture" aria-label="Save PNG picture">📸</button></div></div></section>
 <aside class="panel right"><div class="panel-heading"><h2>✨ Creation Station</h2><span class="micro">NO RULES</span></div><p class="subtext">Build a masterpiece. Or a potato disaster.</p><label class="field" for="characterName">NAME YOUR SPUD</label><input class="name" id="characterName" maxlength="36" value="Sir Spuds-a-Lot"><label class="field">INSTANT PERSONALITIES</label><div class="presets" id="presets"></div><label class="field">POTATO SKIN</label><div class="swatches" id="swatches"></div><label class="field" for="bodySize">POTATO SIZE <output id="bodySizeValue" style="float:right;color:var(--lime)">100%</output></label><input type="range" id="bodySize" min="70" max="135" value="100"><label class="field">STUDIO BACKDROP</label><div class="scene-row" id="scenes"></div><div class="inspector"><div class="inspector-head"><strong id="inspectorName">👀 Select a piece</strong><small id="pieceCount">0 pieces</small></div><div class="range-row"><span>Size</span><output id="sizeValue">100%</output></div><input id="partSize" type="range" min="35" max="220" value="100"><div class="range-row"><span>Rotation</span><output id="rotationValue">0°</output></div><input id="partRotation" type="range" min="-180" max="180" value="0"><div class="mini-actions"><button class="mini" id="duplicate">⧉ Duplicate</button><button class="mini" id="flip">⇄ Flip</button><button class="mini danger" id="delete">✕ Remove</button></div></div><div class="action-grid"><button class="btn main wide" id="randomize">🎲 Randomize everything</button><button class="btn" id="undo">↶ Undo</button><button class="btn" id="redo">↷ Redo</button><button class="btn" id="saveDesign">↓ Save design</button><button class="btn" id="loadDesign">↑ Load design</button><button class="btn" id="loadSong">♫ Load song</button><button class="btn" id="copyDesign">▣ Copy design</button><button class="btn" id="clearAll">🥔 Bare potato</button><button class="btn" id="resetClassic">↺ Reset classic</button></div><input class="load-input" type="file" id="fileInput" accept="application/json,.json"><input class="load-input" type="file" id="songInput" accept="audio/*"><p class="subtext" style="margin-top:12px">Autosaved on this device. Photos and design files can be downloaded anytime.</p></aside>
-</main><footer class="footer"><span>SPUDVERSE 3D · A REAL WEBGL POTATO PLAYGROUND</span><span>MADE FOR SERIOUSLY SILLY PEOPLE 🥔</span></footer>
+</main><footer class="footer"><span>SPUDVERSE 3D · A REAL WEBGL POTATO PLAYGROUND</span><span>SPUDVERSE 3D v<span id="appVersion"></span> · <span id="updateStatus"></span> <button class="btn" id="checkUpdates" hidden>Check for updates</button></span><span>MADE FOR SERIOUSLY SILLY PEOPLE 🥔</span></footer>
 </div><script>
 
 (()=>{'use strict';
@@ -141,14 +148,30 @@ function initFallback(){
  }
  function pickAt(x,y){let best=null,d=55;for(let i=state.parts.length-1;i>=0;i--){let p=state.parts[i],q=pos(p);if(q.front<-.2)continue;let dd=Math.hypot(x-q.x,y-q.y);if(dd<d){best=p;d=dd}}return best}
  const ts=new Map();let pinchD=0,pinchZ=0;
- canvas.addEventListener('pointerdown',e=>{e.preventDefault();canvas.setPointerCapture(e.pointerId);let r=canvas.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;ts.set(e.pointerId,[x,y]);if(ts.size===2){let a=[...ts.values()];pinchD=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]);pinchZ=zoom;drag=null;return}let p=pickAt(x,y);selectedId=p?.id??null;renderUI();drag={id:e.pointerId,x,y,p,before:snapshot()}});
+ canvas.addEventListener('pointerdown',e=>{e.preventDefault();canvas.setPointerCapture(e.pointerId);let r=canvas.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;ts.set(e.pointerId,[x,y]);if(ts.size===2){let a=[...ts.values()];pinchD=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]);pinchZ=zoom;drag=null;fallbackDrag=false;return}let p=pickAt(x,y);selectedId=p?.id??null;renderUI();drag={id:e.pointerId,x,y,p,before:snapshot()};fallbackDrag=true});
  canvas.addEventListener('pointermove',e=>{if(!ts.has(e.pointerId))return;let r=canvas.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;ts.set(e.pointerId,[x,y]);if(ts.size===2){let a=[...ts.values()],d=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]);zoom=clamp(pinchZ-(d-pinchD)*.014,4,11);return}if(!drag||drag.id!==e.pointerId)return;let dx=x-drag.x,dy=y-drag.y;if(drag.p){drag.p.lon=clamp(drag.p.lon+dx/(160*K),-3.1,3.1);drag.p.lat=clamp(drag.p.lat-dy/(185*K),-1.48,1.48)}else yaw+=dx*.008;drag.x=x;drag.y=y});
- canvas.addEventListener('pointerup',e=>{ts.delete(e.pointerId);if(drag?.id===e.pointerId){if(drag.p&&drag.before!==snapshot()){pushHistory(drag.before);persist();renderUI()}drag=null}});canvas.addEventListener('pointercancel',e=>{ts.delete(e.pointerId);drag=null});
+ canvas.addEventListener('pointerup',e=>{ts.delete(e.pointerId);if(drag?.id===e.pointerId){if(drag.p&&drag.before!==snapshot()){pushHistory(drag.before);persist();renderUI()}drag=null;fallbackDrag=false}});canvas.addEventListener('pointercancel',e=>{ts.delete(e.pointerId);drag=null;fallbackDrag=false});
  canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=clamp(zoom+e.deltaY*.006,4,11)},{passive:false});
  $('picture').onclick=()=>{drawFallback(performance.now()/1000);let a=document.createElement('a');a.href=canvas.toDataURL('image/png');a.download=safeName()+'.png';a.click();toast('Photo captured!')};
  function loop2(ms){let dt=Math.min(.05,(ms-prev)/1000||.016);prev=ms;if(state.spin&&!drag)yaw+=dt*.17;drawFallback(ms/1000);requestAnimationFrame(loop2)}
  $('splash').classList.add('hidden');requestAnimationFrame(loop2)
 }
+
+// PWA-UPDATE-SYSTEM v2 bridge: the update script is a separate
+// <script> and cannot see inside this IIFE, so expose only what an
+// update needs. save: the design is autosaved to localStorage on
+// every change, so this is a belt-and-braces flush of the current
+// in-memory state. isBusy: a piece drag / orbit drag is in progress
+// (WebGL path: pointer; 2D compatibility path: fallbackDrag) — its
+// position is only persisted on pointerup, so an update must wait
+// for the drag to finish. A loaded song file is not protected: it
+// lives only in memory (a blob URL) and would need re-loading
+// after an update; it is not saved work.
+let fallbackDrag=false;
+window.__spudverseUpdate = {
+  save: () => { try { persist(); } catch (e) {} },
+  isBusy: () => pointer !== null || fallbackDrag
+};
 
 const gl=canvas.getContext('webgl',{alpha:true,antialias:true,preserveDrawingBuffer:true,premultipliedAlpha:false})||canvas.getContext('experimental-webgl',{alpha:true,antialias:true,preserveDrawingBuffer:true});
 if(!gl){renderUI();initFallback();return}
@@ -290,5 +313,245 @@ canvas.addEventListener('dragover',e=>e.preventDefault());canvas.addEventListene
 renderUI();$('splash').classList.add('hidden');requestAnimationFrame(loop);
 })();
 
-</script><script>if ('serviceWorker' in navigator) { window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {})); }</script>
+</script><script>
+// PWA-UPDATE-SYSTEM v2: auto-update, version banner, Check for updates. Do not remove this line.
+const APP_RELEASE='1.0.0-20261126-1';
+const APP_VERSION='1.0.0';
+(function(){
+  var LATER_KEY = 'mrpotatohead-update-later-v2';
+  var BC_NAME = 'mrpotatohead-update-v2';
+
+  document.getElementById('appVersion').textContent = APP_VERSION;
+  var status = document.getElementById('updateStatus'), checkBtn = document.getElementById('checkUpdates'), bar = document.getElementById('updateBar');
+  var say = function(t){ status.textContent = t; };
+  if (!('serviceWorker' in navigator) || !/^https?:$/.test(location.protocol)) return;
+  checkBtn.hidden = false;
+
+  var reg = null, reloading = false, updating = false;
+  var remote = null, pendingRelease = null, checkPromise = null;
+  var tabId = 'tab-' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+
+  // The app's own state lives inside its IIFE; the v2 bridge
+  // (window.__spudverseUpdate, set up in the main script) is the
+  // only way this script can ask about it. If the bridge is
+  // missing, treat the tab as unsafe to update rather than
+  // guessing. The design is autosaved on every change, so the
+  // only unsaved work is a drag in progress (isBusy).
+  function bridge(){ return window.__spudverseUpdate || null; }
+  function thisTabBlocked(){
+    var b = bridge();
+    if (!b) return true;
+    try { return b.isBusy(); } catch (e) { return true; }
+  }
+
+  // Multi-tab coordination over BroadcastChannel.
+  var bc = null, bcWaiters = {};
+  try { if ('BroadcastChannel' in window) bc = new BroadcastChannel(BC_NAME); } catch (e) {}
+  if (bc) bc.onmessage = function(ev){
+    var d = ev.data || {};
+    if (d.type === 'update-query' && d.from !== tabId) {
+      try { bc.postMessage({ type: 'update-response', id: d.id, from: tabId, blocked: thisTabBlocked() }); } catch (e) {}
+    } else if (d.type === 'update-response' && bcWaiters[d.id]) {
+      bcWaiters[d.id].push(d);
+    }
+  };
+  function queryTabs(release){
+    return new Promise(function(resolve){
+      if (!bc) return resolve([]);
+      var id = 'q-' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+      var answers = [];
+      bcWaiters[id] = answers;
+      try { bc.postMessage({ type: 'update-query', id: id, from: tabId, release: release }); } catch (e) {}
+      setTimeout(function(){ delete bcWaiters[id]; resolve(answers); }, 800);
+    });
+  }
+
+  function workerVersion(worker, ms){
+    return new Promise(function(resolve){
+      if (!worker || !('MessageChannel' in window)) return resolve(null);
+      var done = false, timer = null;
+      try {
+        var ch = new MessageChannel();
+        timer = setTimeout(function(){ if (!done) { done = true; resolve(null); } }, ms);
+        ch.port1.onmessage = function(ev){
+          if (done) return; done = true; clearTimeout(timer);
+          var d = ev.data || {};
+          resolve((d.release && d.displayVersion) ? d : null);
+        };
+        worker.postMessage({ type: 'GET_VERSION' }, [ch.port2]);
+      } catch (e) { if (timer) clearTimeout(timer); resolve(null); }
+    });
+  }
+  function workerClientCount(worker){
+    return new Promise(function(resolve){
+      if (!worker || !('MessageChannel' in window)) return resolve(null);
+      var done = false, timer = null;
+      try {
+        var ch = new MessageChannel();
+        timer = setTimeout(function(){ if (!done) { done = true; resolve(null); } }, 2000);
+        ch.port1.onmessage = function(ev){
+          if (done) return; done = true; clearTimeout(timer);
+          var d = ev.data || {};
+          resolve(typeof d.count === 'number' ? d.count : null);
+        };
+        worker.postMessage({ type: 'GET_CLIENTS' }, [ch.port2]);
+      } catch (e) { if (timer) clearTimeout(timer); resolve(null); }
+    });
+  }
+  function waitControllerChange(ms){
+    return new Promise(function(resolve){
+      var done = false;
+      var timer = setTimeout(function(){ if (!done) { done = true; resolve(false); } }, ms);
+      var onChange = function(){
+        if (done) return; done = true; clearTimeout(timer);
+        navigator.serviceWorker.removeEventListener('controllerchange', onChange);
+        resolve(true);
+      };
+      navigator.serviceWorker.addEventListener('controllerchange', onChange);
+    });
+  }
+
+  function showBar(display, release, manual){
+    if (release) pendingRelease = release;
+    var later = null;
+    try { later = sessionStorage.getItem(LATER_KEY); } catch (e) {}
+    document.getElementById('updateText').textContent = 'Spudverse 3D ' + (display ? 'v' + display + ' ' : '') + 'is ready. Updating keeps your potato and saved work.';
+    if (later && release && later === release && !manual) return;
+    bar.hidden = false;
+    say('An update is ready.');
+  }
+  function fetchRemote(){
+    return fetch('version.json?t=' + Date.now(), { cache: 'no-store' })
+      .then(function(r){ if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
+      .then(function(info){ remote = (info && typeof info.release === 'string') ? info : null; return remote; })
+      .catch(function(){ remote = null; return null; });
+  }
+  function maybeShowUpdate(manual){
+    return fetchRemote().then(function(info){
+      if (reg) return reg.update().catch(function(){}).then(function(){ return info; });
+      return info;
+    }).then(function(info){
+      var w = reg && reg.waiting;
+      if (!w || !navigator.serviceWorker.controller) {
+        if (manual) {
+          if (!info) say('Could not reach the server. Try again when you are online.');
+          else if (info.release && info.release !== APP_RELEASE) say('Version ' + info.version + ' found. Downloading\u2026');
+          else say('You have the latest version (' + APP_VERSION + ').');
+        }
+        return false;
+      }
+      return workerVersion(w, 2000).then(function(verified){
+        if (verified) {
+          if (info && info.release && verified.release !== info.release) {
+            if (manual) say('The downloaded update did not match the published release. Try again.');
+            return false;
+          }
+          showBar(verified.displayVersion, verified.release, manual);
+          if (manual) say('An update is ready.');
+          return true;
+        }
+        // Handshake failed: show the banner, but name no version.
+        showBar(null, info && info.release, manual);
+        if (manual) say('An update is ready.');
+        return true;
+      });
+    });
+  }
+  function check(manual){
+    if (checkPromise) return checkPromise;
+    if (manual) { say('Checking\u2026'); checkBtn.disabled = true; }
+    checkPromise = maybeShowUpdate(manual).catch(function(){ return false; }).then(function(ok){
+      checkPromise = null;
+      if (manual) checkBtn.disabled = false;
+      return ok;
+    });
+    return checkPromise;
+  }
+  function track(w){
+    if (!w) return;
+    w.addEventListener('statechange', function(){
+      if (w.state === 'installed') check(false);
+    });
+  }
+
+  async function applyUpdate(){
+    if (updating) return;
+    updating = true;
+    try {
+      var w = reg && reg.waiting;
+      if (!w) { say('No update is waiting. Tap Check for updates first.'); return; }
+      var expected = pendingRelease || (remote && remote.release);
+      // 1. Protect this tab's unsaved work before anything moves.
+      // The design autosaves on every change; flush the current
+      // in-memory state anyway, then refuse while a drag is in
+      // progress (its position is only persisted on pointerup).
+      var b = bridge();
+      if (b) { try { b.save(); } catch (e) {} }
+      if (thisTabBlocked()) {
+        say('Finish dragging first, then tap Update now.');
+        return;
+      }
+      // 2. Coordinate with other tabs of this app.
+      say('Checking other tabs\u2026');
+      var answers = await queryTabs(expected);
+      if (answers.some(function(a){ return a.blocked; })) {
+        say('Another Spudverse tab is busy (mid-drag) \u2014 finish there first, or close that tab.');
+        return;
+      }
+      if (answers.length === 0) {
+        var count = await workerClientCount(w);
+        if (count === null || count > 1) {
+          say('Another Spudverse tab is open and couldn\u2019t confirm it\u2019s safe.');
+          return;
+        }
+      }
+      // 3. Activate only the specific waiting worker.
+      say('Updating\u2026');
+      var changed = waitControllerChange(8000);
+      w.postMessage({ type: 'SKIP_WAITING' });
+      var ok = await changed;
+      if (!ok) {
+        say('The update did not start. Tap Update now to try again, or Later to defer it.');
+        return;
+      }
+      // 4. Verify the new controller really is the expected release,
+      // then reload exactly once. No blind reload fallback exists.
+      var info = await workerVersion(navigator.serviceWorker.controller, 2000);
+      if (!info || (expected && info.release !== expected)) {
+        say('The update did not take over as expected. Tap Update now to try again, or Later to defer it.');
+        return;
+      }
+      if (reloading) return;
+      reloading = true;
+      location.reload();
+    } finally { updating = false; }
+  }
+
+  document.getElementById('updateNow').onclick = applyUpdate;
+  document.getElementById('updateLater').onclick = function(){
+    bar.hidden = true;
+    try { sessionStorage.setItem(LATER_KEY, pendingRelease || (remote && remote.release) || '?'); } catch (e) {}
+    say('Update postponed. You will be asked again next time you open the app, or tap Check for updates.');
+  };
+  checkBtn.onclick = function(){ check(true); };
+  // A controllerchange on its own (first install, or an update
+  // activated from another tab) never reloads this page: only an
+  // explicit Update now in this tab does, after verification in
+  // applyUpdate. There is deliberately no reload here.
+  window.addEventListener('load', async function(){
+    try { reg = await navigator.serviceWorker.register('sw.js', { updateViaCache: 'none', scope: './' }); } catch (e) { return; }
+    if (reg.waiting) check(false);
+    track(reg.installing);
+    reg.addEventListener('updatefound', function(){ track(reg.installing); });
+    check(false);
+  });
+  var last = Date.now();
+  document.addEventListener('visibilitychange', function(){
+    if (document.visibilityState === 'visible' && Date.now() - last > 5 * 60e3) { last = Date.now(); check(false); }
+  });
+  setInterval(function(){
+    if (document.visibilityState === 'visible') { last = Date.now(); check(false); }
+  }, 60 * 60e3);
+})();
+</script>
 </body></html>
